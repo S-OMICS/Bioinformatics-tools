@@ -1,0 +1,15 @@
+def gc_content(dna_seq):
+    # Convert the sequence to upper case (optional, but ensures consistent case)
+    dna_seq = dna_seq.upper()
+    
+    # Count G's and C's
+    gc_count = dna_seq.count('G') + dna_seq.count('C')
+    
+    # Calculate GC content as a percentage
+    gc_percentage = (gc_count / len(dna_seq)) * 100
+    
+    return gc_percentage
+
+
+dna_seq = input("Enter an DNA sequence: ")
+print("GC content:", gc_content(dna_seq), "%")
