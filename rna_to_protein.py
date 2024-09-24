@@ -57,7 +57,7 @@ def translate_rna_to_protein(rna_seq):
     return ''.join(protein_seq)
 
 def main():
-    # Example usage
+   
     rna_seq = input("Enter an RNA sequence: ").strip()
     protein = translate_rna_to_protein(rna_seq)
     print("Protein sequence:", protein)
